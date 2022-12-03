@@ -34,7 +34,7 @@ const nodemailer = require("nodemailer");
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     if(info.messageId){
-        res.json("Message Send Successfully")
+        res.json("Message Send Successfully..")
     }else{
         res.json("message send Unsuccessfully")
     }
