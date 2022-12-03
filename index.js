@@ -5,7 +5,9 @@ const cors = require('cors');
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-
+app.get('/', (req, res) => {
+    res.send('Hello From  Uncle!')
+  })
 app.listen(5000,() =>{
     console.log("Server is running")
 })
